@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(45deg, #5D3FD3, #ffffff); /* خلفية تدريجية من البنفسجي والأبيض */
+            background-size: cover;
+            text-align: center;
+            flex-direction: column;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* شفافية للخلفية */
+            border-radius: 10px;
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px; /* لإعطاء مسافة بين القوائم والترحيب */
+        }
+        header {
+            font-size: 30px;
+            color: #5D3FD3;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 100%; /* عرض الصورة بالكامل */
+            max-width: 400px; /* الحد الأقصى لحجم الصورة */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .content h2 {
+            font-size: 28px;
+            color: #333;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #5D3FD3;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4336A2;
+        }
+        #greeting {
+            font-size: 22px;
+            color: #5D3FD3;
+            margin-top: 20px;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+            display: none; /* إخفاء القوائم في البداية */
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #4336A2;
+            border-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Welcome To FIVE GUYS Restaurant</header> <!-- تم تعديل النص هنا -->
+        
+        <!-- صورة كبيرة -->
+        <div class="image-container">
+            <img src="fahad.jpg" alt="Fahad's Image">
+        </div>
+        
+        <div class="content">
+            <p>Please enter your name:</p>
+            <input type="text" id="username" placeholder="Enter your name">
+            <button onclick="greetUser()">Submit</button>
+            <h2 id="greeting"></h2>
+        </div>
+    </div>
+
+    <!-- القوائم -->
+    <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="orders.html">Orders</a>
+        <a href="Reviews.html">Reviews</a>
+        <a href="special_offers.html">Special Offers</a>
+        <a href="menu.html">Menu</a>
+        <a href="register.html">Register</a> <!-- رابط التسجيل -->
+    </nav>
+
+    <script>
+        function greetUser() {
+            const username = document.getElementById('username').value;
+            if (username) {
+                document.getElementById('greeting').textContent = `Welcome, ${username}!`;
+                document.getElementById('nav-links').style.display = 'flex'; // إظهار القوائم بعد الترحيب
+            } else {
+                document.getElementById('greeting').textContent = "Please enter your name.";
+            }
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #5D3FD3;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #4336A2;
+        }
+        .content {
+            padding: 20px;
+        }
+        .menu-container {
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            align-items: center;
+        }
+        .menu-item img {
+            width: 100px; /* Increased size */
+            height: 100px;
+            margin-right: 20px;
+        }
+        .menu-item div {
+            text-align: right;
+        }
+        .calories {
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurant</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="orders.html">Orders</a>
+            <a href="Reviews.html">Reviews</a>
+            <a href="special_offers.html">Special Offers</a>
+            <a href="menu.html">Menu</a>
+            <a href="desserts.html">Desserts</a> <!-- Added Desserts link -->
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <!-- Pizza Item with Image and Calories -->
+            <div class="menu-item">
+                <img src="btt.jpg" alt="Pizza">
+                <div>
+                    <span>Pizza</span>
+                    <p>22.50 ر.س</p>
+                    <p class="calories">Calories: 300 kcal</p>
+                </div>
+            </div>
+            <!-- Burger Item with Image and Calories -->
+            <div class="menu-item">
+                <img src="brr.jpg" alt="Burger">
+                <div>
+                    <span>Burger</span>
+                    <p>18.00 ر.س</p>
+                    <p class="calories">Calories: 500 kcal</p>
+                </div>
+            </div>
+            <!-- Sushi Item with Image and Calories -->
+            <div class="menu-item">
+                <img src="suu.jpg" alt="Sushi">
+                <div>
+                    <span>Sushi</span>
+                    <p>45.00 ر.س</p>
+                    <p class="calories">Calories: 200 kcal</p>
+                </div>
+            </div>
+            <!-- Chicken Item with Image and Calories -->
+            <div class="menu-item">
+                <img src="ch.jpg" alt="Chicken">
+                <div>
+                    <span>Chicken</span>
+                    <p>45.00 ر.س</p> <!-- 12 USD converted to 45 SAR -->
+                    <p class="calories">Calories: 400 kcal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

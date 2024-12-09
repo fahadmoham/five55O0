@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5dc; /* لون البيج الفاتح */
+    color: #333;
+}
+
+h1 {
+    color: #8B4513; /* لون بني غامق */
+}
+
+button, input[type="submit"] {
+    background-color: #D2B48C; /* لون بني فاتح/بيج */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #A0522D; /* لون بني غامق عند التمرير */
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8B4513; /* اللون البني الغامق للروابط */
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color: #D2B48C; /* لون بيج فاتح عند التمرير على الروابط */
+}
+

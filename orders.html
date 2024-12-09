@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Orders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+        header {
+            background-color: #5D3FD3;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #4336A2;
+        }
+        .order-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Orders</h1>
+        <!-- شريط التنقل بين الصفحات -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="orders.html">Orders</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="special_offers.html">Special Offers</a>
+            <a href="menu.html">Menu</a>
+        </nav>
+    </header>
+    <div class="order-container">
+        <h2>Current Orders</h2>
+        <div class="order-item">
+            <span>Grilled Chicken</span>
+            <span>$15</span>
+        </div>
+        <div class="order-item">
+            <span>Vegetarian Pizza</span>
+            <span>$12</span>
+        </div>
+        <div class="order-item">
+            <span>Orange Juice</span>
+            <span>$4</span>
+        </div>
+        <h3>Total: $31</h3>
+    </div>
+</body>
+</html>
